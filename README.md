@@ -1,4 +1,4 @@
-# django-docker-project-template
+# django-docker-template
 
 Standard django-docker setup.
 
