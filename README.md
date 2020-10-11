@@ -1,6 +1,6 @@
 # django-docker-template
 
-Standard django-docker setup.
+Standard django docker-compose setup.
 
 Get started by using the following commands in the command line
 ```
