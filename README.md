@@ -2,9 +2,37 @@
 
 Standard django docker-compose setup.
 
-Get started by using the following commands in the command line
+First clone the project:
+```commandline
+git clone https://github.com/xl3ehindTim/django-docker-template.git
 ```
-$ git clone https://github.com/xl3ehindTim/django-docker-template.git
-$ cd django-docker-project-template
-$ docker-compose up
+
+Then change the database and web variables in the docker-compose.yml file
+```
+db:
+    # ...
+    environment:
+      - POSTGRES_DB=database < Change to your database name
+      - POSTGRES_USER=username < Change to your username
+      - POSTGRES_PASSWORD=password < Change to your password
+
+```
+```
+web:
+    # ...
+    environment:
+        POSTGRES_DB: database < Change to your database name
+        POSTGRES_USER: username < Change to your username
+        POSTGRES_PASSWORD: password < Change to your password
+```
+
+At last, you can start by running: 
+```commandline
+docker-compose up
+```
+
+## Important note
+For use in production you should change the **secret_key** variable in app-data/project/settings.py
+```python
+SECRET_KEY = 'sample_key'
 ```
