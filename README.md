@@ -1,6 +1,4 @@
-# django-docker-template
-
-Standard django docker-compose setup.
+# Setup
 
 First clone the project:
 ```commandline
@@ -15,7 +13,6 @@ db:
       - POSTGRES_DB=database < Change to your database name
       - POSTGRES_USER=username < Change to your username
       - POSTGRES_PASSWORD=password < Change to your password
-
 ```
 ```
 web:
