@@ -2,7 +2,7 @@
 
 First clone the project:
 ```commandline
-git clone https://github.com/xl3ehindTim/django-docker-template.git
+$ git clone https://github.com/xl3ehindTim/django-docker-template.git
 ```
 
 Then change the database and web variables in the docker-compose.yml file
@@ -25,7 +25,7 @@ web:
 
 At last, you can start by running: 
 ```commandline
-docker-compose up
+$ docker-compose up
 ```
 
 ## Important note
