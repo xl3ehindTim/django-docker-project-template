@@ -19,3 +19,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 sudo usermod -aG docker $USER
 sudo reboot
+
+# You might also need to use: chmod +x install.sh
